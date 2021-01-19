@@ -29,7 +29,7 @@ def info_gain(data, feature, target):
     return round(info_gain,5)
 
 def best_split(data, features, target):
-    # find the best split feature via greatest information gain
+    # find the best split feature via greatest information gain.
     maxInfoGain = 0
     for feature in features:    
         infoGain = info_gain(data, feature, target)
